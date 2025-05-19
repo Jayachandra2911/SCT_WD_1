@@ -47,7 +47,7 @@ nav .menu a:hover {
 /* HERO */
 .hero {
   height: 80vh;
-  background: url('./images/pexels-souvenirpixels-417074.jpg');
+  background: url('pexels-souvenirpixels-417074.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
