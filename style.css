@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+nav .logo img {
+  height: 40px;
+}
+
+nav .menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav .menu a:hover {
+  color: #ffcc00;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url('./images/pexels-souvenirpixels-417074.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .menu {
+    margin-top: 10px;
+  }
+
+  nav .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
